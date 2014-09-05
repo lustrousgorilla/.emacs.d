@@ -1,14 +1,16 @@
 (require 'cask "/usr/local/Cellar/cask/0.7.1/cask.el")
 (cask-initialize)
 (require 'pallet)
-(add-to-list 'load-path "~/.emacs.d/custom/")
+(add-to-list 'load-path "~/.emacs.d/config/")
 ;;(add-to-list 'load-path "~/.emacs.d/themes/")
 
 ;;(load "twilight-theme.el")
 (load-theme 'soft-morning t)
 (load "00common-setup.el")
 (load "01ruby.el")
-(load "02highlight-indentation.el")
+(load "02javascript.el")
+(load "03highlight-indentation.el")
+(load "04auto-complete.el")
 
 
 
