@@ -18,6 +18,7 @@
 (load "02javascript.el")
 (load "03highlight-indentation.el")
 (load "04auto-complete.el")
+(load "05dash.el")
 
 (setq url-proxy-services '(("http" . "wwwproxy.sandia.gov:80")
                            ("https" . "wwwproxy.sandia.gov:80")))
