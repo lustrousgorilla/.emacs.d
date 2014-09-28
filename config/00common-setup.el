@@ -10,7 +10,7 @@
 
 ;; Font Size (think 100 is default)
 ;;(set-face-attribute 'default nil :family "Inconsolata" :height 110)
-(set-face-attribute 'default nil :family "Fira Mono" :height 110)
+(set-face-attribute 'default nil :family "Fira Mono" :height 140)
 
 ;;(set-frame-font "Fira Mono OT-14" nil t)
 ;;(set-default-font "Fira Mono")

@@ -1,8 +1,15 @@
 (require 'cask "/usr/local/Cellar/cask/0.7.1/cask.el")
 (cask-initialize)
 (require 'pallet)
+(require 'package)
+(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+                         ("marmalade" . "http://marmalade-repo.org/packages/")
+                         ("melpa" . "http://melpa.milkbox.net/packages/")
+                         ("tromey" . "http://tromey.com/elpa/")))
+(package-initialize)
+
 (add-to-list 'load-path "~/.emacs.d/config/")
-;;(add-to-list 'load-path "~/.emacs.d/themes/")
+(add-to-list 'load-path "~/.emacs.d/themes/")
 
 ;;(load "twilight-theme.el")
 (load-theme 'soft-morning t)
@@ -12,13 +19,8 @@
 (load "03highlight-indentation.el")
 (load "04auto-complete.el")
 
-
-
-(require 'package)                                              (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-                         ("marmalade" . "http://marmalade-repo.org/packages/")
-                         ("melpa" . "http://melpa.milkbox.net/packages/")
-                         ("tromey" . "http://tromey.com/elpa/")))
-(package-initialize)
+(setq url-proxy-services '(("http" . "wwwproxy.sandia.gov:80")
+                           ("https" . "wwwproxy.sandia.gov:80")))
 
 (add-to-list 'auto-mode-alist '("\\.scss\\'" . css-mode))
 
