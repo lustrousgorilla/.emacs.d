@@ -8,6 +8,8 @@
                          ("tromey" . "http://tromey.com/elpa/")))
 (package-initialize)
 
+(setq shell-command-switch "-ic")
+
 (add-to-list 'load-path "~/.emacs.d/config/")
 (add-to-list 'load-path "~/.emacs.d/themes/")
 
@@ -19,6 +21,7 @@
 (load "03highlight-indentation.el")
 (load "04auto-complete.el")
 (load "05dash.el")
+(load "06ag.el")
 
 (add-to-list 'auto-mode-alist '("\\.scss\\'" . css-mode))
 

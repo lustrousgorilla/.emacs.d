@@ -6,6 +6,7 @@
 (depends-on "ag")
 (depends-on "auto-complete")
 (depends-on "color-theme")
+(depends-on "color-theme-twilight")
 (depends-on "dash-at-point")
 (depends-on "enh-ruby-mode")
 (depends-on "feature-mode")
