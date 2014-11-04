@@ -3,4 +3,5 @@
 (setq projectile-enable-caching t)
 (global-set-key (kbd "M-p") nil)
 (global-set-key (kbd "M-p f") 'projectile-find-file)
+(global-set-key (kbd "M-p d") 'projectile-find-directory)
 (global-set-key (kbd "M-p b") 'projectile-switch-to-buffer)
