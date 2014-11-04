@@ -17,5 +17,6 @@
 (depends-on "mustache-mode")
 (depends-on "pallet")
 (depends-on "powerline")
+(depends-on "rainbow-mode")
 (depends-on "rvm")
 (depends-on "soft-morning-theme")
