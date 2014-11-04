@@ -8,8 +8,6 @@
                          ("tromey" . "http://tromey.com/elpa/")))
 (package-initialize)
 
-(setq shell-command-switch "-ic")
-
 (add-to-list 'load-path "~/.emacs.d/config/")
 (add-to-list 'load-path "~/.emacs.d/themes/")
 
@@ -20,12 +18,23 @@
 (load "01ruby.el")
 (load "02javascript.el")
 (load "03highlight-indentation.el")
-(load "04auto-complete.el")
+;;(load "04auto-complete.el")
+(load "04company.el")
 (load "05dash.el")
 (load "06ag.el")
 (load "07powerline.el")
+(load "08css.el")
+(load "09expand-region.el")
+
+
 
 (setq shell-command-switch "-ic")
+
+;; Make shell environment variables (that were explicitly exported) visible to emacs
+;; in particular need DYLD_LIBRARY_PATH so Oracle Adapter doesn't blow up Robe
+(when (memq window-system '(mac ns))
+   (exec-path-from-shell-initialize))
+(exec-path-from-shell-copy-env "DYLD_LIBRARY_PATH")
 
 
 

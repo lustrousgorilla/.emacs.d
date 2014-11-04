@@ -4,4 +4,5 @@
 (ac-config-default)
 (setq ac-ignore-case nil)
 (add-to-list 'ac-modes 'enh-ruby-mode)
+(add-hook 'robe-mode-hook 'ac-robe-setup)
 ;(add-to-list 'ac-modes 'web-mode)
