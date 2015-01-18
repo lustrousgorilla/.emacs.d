@@ -1,10 +1,10 @@
 ;; no more trailing whitespace
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
-(global-set-key (kbd "C-M-u") 'windmove-up)
-(global-set-key (kbd "C-M-d") 'windmove-down)
-(global-set-key (kbd "C-M-l") 'windmove-left)
-(global-set-key (kbd "C-M-r") 'windmove-right)
+(global-set-key (kbd "<up>") 'windmove-up)
+(global-set-key (kbd "<down>") 'windmove-down)
+(global-set-key (kbd "<left>") 'windmove-left)
+(global-set-key (kbd "<right>") 'windmove-right)
 
 (global-set-key (kbd "C-M-\\") 'indent-region)
 
