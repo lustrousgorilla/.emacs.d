@@ -18,6 +18,7 @@
 (load "01ruby.el") ;; number prefixed to avoid name collision -> recursive load error
 (load "02clojure.el")
 (load "03javascript.el")
+(load "04web.el")
 (load "05css.el")
 
 ;; Tools/Minor Modes
@@ -25,6 +26,7 @@
 (load "11flx-ido.el")
 (load "12company.el")
 (load "13ag.el")
+(load "14paredit.el")
 (load "15dash.el")
 (load "16expand-region.el")
 (load "17highlight-indentation.el")
