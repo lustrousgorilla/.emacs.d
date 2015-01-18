@@ -28,10 +28,6 @@
 (load "10projectile.el")
 (load "11flx-ido.el")
 
-(setq url-proxy-services '(("no_proxy" . "^\\(localhost\\|127.0.0.1\\)")
-                           ("http" . "wwwproxy.sandia.gov:80")
-                           ("https" . "wwwproxy.sandia.gov:80")))
-
 (setq shell-command-switch "-ic")
 
 ;; Make shell environment variables (that were explicitly exported) visible to emacs
