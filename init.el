@@ -18,7 +18,6 @@
 (load "01ruby.el")
 (load "02javascript.el")
 (load "03highlight-indentation.el")
-;;(load "04auto-complete.el")
 (load "04company.el")
 (load "05dash.el")
 (load "06ag.el")
