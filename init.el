@@ -16,6 +16,7 @@
 
 ;; Languages/Major Modes
 (load "01ruby.el") ;; number prefixed to avoid name collision -> recursive load error
+(load "02clojure.el")
 (load "03javascript.el")
 (load "05css.el")
 
