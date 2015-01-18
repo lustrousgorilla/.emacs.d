@@ -27,3 +27,12 @@
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 (prefer-coding-system 'utf-8)
+
+(setq shell-command-switch "-ic")
+
+;; Make shell environment variables (that were explicitly exported) visible to emacs
+(when (memq window-system '(mac ns))
+   (exec-path-from-shell-initialize))
+(exec-path-from-shell-copy-env "DYLD_LIBRARY_PATH") ;; so Oracle Adapter doesn't blow up Robe
+(exec-path-from-shell-copy-env "GEM_HOME") ;; so RVM doesn't blow up Cider REPL
+(exec-path-from-shell-copy-env "GEM_PATH")

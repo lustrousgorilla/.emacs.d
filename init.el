@@ -8,9 +8,8 @@
                          ("tromey" . "http://tromey.com/elpa/")))
 (package-initialize)
 
-(add-to-list 'load-path "~/.emacs.d/config/")
-
 ;; Config
+(add-to-list 'load-path "~/.emacs.d/config/")
 (load "global.el")
 (load "ui.el")
 
@@ -33,16 +32,6 @@
 
 ;; Load custom keybindings at end to ensure mapped package functions are defined
 (load "keybindings.el")
-
-(setq shell-command-switch "-ic")
-
-;; Make shell environment variables (that were explicitly exported) visible to emacs
-;; in particular need DYLD_LIBRARY_PATH so Oracle Adapter doesn't blow up Robe
-(when (memq window-system '(mac ns))
-   (exec-path-from-shell-initialize))
-(exec-path-from-shell-copy-env "DYLD_LIBRARY_PATH")
-
-
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
