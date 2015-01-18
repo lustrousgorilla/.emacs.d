@@ -9,23 +9,27 @@
 (package-initialize)
 
 (add-to-list 'load-path "~/.emacs.d/config/")
-(add-to-list 'load-path "~/.emacs.d/themes/")
 
-;;(load "twilight-theme.el")
-;;(load-theme 'twilight' t)
-(load-theme 'soft-morning t)
-(load "00common-setup.el")
-(load "01ruby.el")
-(load "02javascript.el")
-(load "03highlight-indentation.el")
-(load "04company.el")
-(load "05dash.el")
-(load "06ag.el")
-(load "07powerline.el")
-(load "08css.el")
-(load "09expand-region.el")
+;; Config
+(load "global.el")
+(load "ui.el")
+
+;; Languages/Major Modes
+(load "01ruby.el") ;; number prefixed to avoid name collision -> recursive load error
+(load "03javascript.el")
+(load "05css.el")
+
+;; Tools/Minor Modes
 (load "10projectile.el")
 (load "11flx-ido.el")
+(load "12company.el")
+(load "13ag.el")
+(load "15dash.el")
+(load "16expand-region.el")
+(load "17highlight-indentation.el")
+
+;; Load custom keybindings at end to ensure mapped package functions are defined
+(load "keybindings.el")
 
 (setq shell-command-switch "-ic")
 

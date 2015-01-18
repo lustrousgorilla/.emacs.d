@@ -11,8 +11,6 @@
 (setq enh-ruby-bounce-deep-indent t)
 (setq enh-ruby-hanging-brace-indent-level 2)
 
-(global-set-key (kbd "C-c r a") 'rvm-activate-corresponding-ruby)
-
 ;;(add-hook 'ruby-mode-hook 'robe-mode)
 (add-hook 'enh-ruby-mode-hook 'robe-mode)
 (add-hook 'haml-mode-hook 'robe-mode)
