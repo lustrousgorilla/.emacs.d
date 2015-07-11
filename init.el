@@ -19,6 +19,7 @@
 (load "03javascript.el")
 (load "04web.el")
 (load "05css.el")
+(load "06coffee.el")
 
 ;; Tools/Minor Modes
 (load "10projectile.el")
