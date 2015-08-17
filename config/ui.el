@@ -1,12 +1,13 @@
 (add-to-list 'load-path "~/.emacs.d/themes/")
 
-;;(load "twilight-theme.el")
-;;(load-theme 'twilight' t)
-(load-theme 'soft-morning t)
+(load "twilight-theme.el")
+(load-theme 'twilight' t)
+;;(load-theme 'soft-morning t)
 
 ;; font size (think 100 is default)
 ;;(set-face-attribute 'default nil :family "Inconsolata" :height 110)
 (set-face-attribute 'default nil :family "Fira Mono" :height 140)
+;;(set-face-attribute 'default nil :family "Monoid" :height 140)
 
 ;;(set-frame-font "Fira Mono OT-14" nil t)
 ;;(set-default-font "Fira Mono")
