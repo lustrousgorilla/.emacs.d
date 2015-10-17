@@ -1,6 +1,7 @@
 (require 'cask "/usr/local/Cellar/cask/0.7.1/cask.el")
 (cask-initialize)
 (require 'pallet)
+(pallet-mode t)
 (require 'package)
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
                          ("marmalade" . "http://marmalade-repo.org/packages/")
