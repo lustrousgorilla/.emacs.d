@@ -31,6 +31,7 @@
 (load "15dash.el")
 (load "16expand-region.el")
 (load "17highlight-indentation.el")
+(load "18magit.el")
 
 ;; Load custom keybindings at end to ensure mapped package functions are defined
 (load "keybindings.el")
