@@ -21,9 +21,9 @@
 (global-set-key "\C-ce" 'dash-at-point-with-docset)
 
 ;; Ag
-(global-set-key "\C-ca" 'ag)
-(global-set-key "\C-cp" 'ag-project)
-(global-set-key "\C-ca" 'ag-regexp)
+;;(global-set-key "\C-ca" 'ag)
+(global-set-key "\C-ca" 'ag-project)
+;;(global-set-key "\C-ca" 'ag-regexp)
 
 ;; Expand Region
 (global-set-key (kbd "C-@") 'er/expand-region)
