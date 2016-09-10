@@ -30,6 +30,11 @@
 
 (setq shell-command-switch "-ic")
 
+;; (defun align-to-equals (begin end)
+;;   "Align region to equal signs"
+;;    (interactive "r")
+;;    (align-regexp begin end "\\(\\s-*\\)=" 1 1 ))
+
 ;; Make shell environment variables (that were explicitly exported) visible to emacs
 (when (memq window-system '(mac ns))
    (exec-path-from-shell-initialize))

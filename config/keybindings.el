@@ -22,10 +22,16 @@
 
 ;; Ag
 ;;(global-set-key "\C-ca" 'ag)
-(global-set-key "\C-ca" 'ag-project)
+;;(global-set-key "\C-ca" 'ag-project)
+(global-set-key "\C-ca" 'projectile-ag)
 ;;(global-set-key "\C-ca" 'ag-regexp)
 (global-set-key "\C-ck" 'ag-kill-other-buffers)
 
 ;; Expand Region
 (global-set-key (kbd "C-@") 'er/expand-region)
 (global-set-key (kbd "C--") 'er/contract-region)
+
+;; Align
+(global-set-key (kbd "C-c =")
+  (lambda () (interactive)
+    (align-regexp (region-beginning) (region-end) "\\(\\s-*\\)=" 1 1 nil)))

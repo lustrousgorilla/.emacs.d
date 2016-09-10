@@ -5,7 +5,7 @@
 (require 'package)
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
                          ("marmalade" . "http://marmalade-repo.org/packages/")
-                         ("melpa" . "http://melpa.org/packages/")
+                         ("melpa" . "https://melpa.org/packages/")
                          ("tromey" . "http://tromey.com/elpa/")))
 (package-initialize)
 
@@ -15,6 +15,7 @@
 (load "ui.el")
 
 ;; Languages/Major Modes
+(load "19orgmode.el")
 (load "01ruby.el") ;; number prefixed to avoid name collision -> recursive load error
 (load "02clojure.el")
 (load "03javascript.el")
